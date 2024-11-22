@@ -29,8 +29,8 @@ const Header=()=>{
         return(<div>
                 <div className='header-part1'>
                         <div className='logo-section'>
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
+                                <img src={logo} className="App-logo" alt="logo" />
+                                <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
                         </div>
                         <div className='Menu-section' onMouseLeave={() => setDropdownVisible(false)}>
                                 <div className='menu-item' ><button>Become Vendor <EastOutlinedIcon/></button></div>
