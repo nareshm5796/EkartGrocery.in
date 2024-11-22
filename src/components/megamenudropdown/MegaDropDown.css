@@ -1,0 +1,8 @@
+.MegaCard{  padding: 10px 0px; box-shadow: 0px 1px 3px rgb(227, 224, 224);
+          display: flex;align-items: top;justify-content: center; gap: 20px;}
+
+.MegaCard-items{margin-right: 10px;}
+.MegaCard-item-title{font-weight: 600; color: rgba(59, 183, 126, 0.9); margin: 10px 0px;}
+.MegaCard .MegaCard-items-lists li{list-style: none; padding: 10px 0px; }
+.MegaCard .MegaCard-items-lists li button{font-size: 16px; font-weight: 600; color: rgba(0,0,0,0.6);}
+.MegaCard img{border-radius: 15px; width: 250px; margin: 15px 0px; }
