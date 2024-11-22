@@ -1,0 +1,8 @@
+.dropdown{position: relative; display: flexbox;  }
+.dropdown .dropdown-menu{ padding: 5px; width: 180px; display: flexbox; position: absolute;top: 20px;right: 20px;
+                          box-shadow: 0px 0px 10px rgb(227, 224, 224); 
+                          border-radius: 10px; background-color: rgb(255, 255, 255);}
+.dropdown .dropdown-menu .dropdown-menu-item{ list-style: none; text-align: left; padding: 0px 10px;  }
+.dropdown .dropdown-menu .dropdown-menu-item button{ display: flex;align-items: center; gap: 10px;
+                width: 100%; text-align: left; padding: 10px; font-weight: 600; }
+.dropdown .dropdown-menu .dropdown-menu-item button:hover{ background-color: rgb(219, 210, 210); border-radius: 4px;}
