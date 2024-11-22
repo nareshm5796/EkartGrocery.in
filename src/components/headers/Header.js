@@ -1,5 +1,5 @@
 import React from 'react'
-import '../headers/Header.css'
+import '../headers/header.css'
 import logo from '../assets/logo.png';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import SelectDropDown from '../selectdropdown/SelectDropDown'
