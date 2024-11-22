@@ -26,7 +26,7 @@ const Header=()=>{
         const [isvenderDropdownVisible, setvenderDropdownVisible] = useState(false);
         const [megaopen, setmegaopen] = useState(false);
 
-        return(<div>
+        return(<div className='header'>
                 <div className='header-part1'>
                         <div className='logo-section'>
                                 <img src={logo} className="App-logo" alt="logo" />
