@@ -26,8 +26,12 @@ const Header=()=>{
         const [isvenderDropdownVisible, setvenderDropdownVisible] = useState(false);
         const [megaopen, setmegaopen] = useState(false);
 
+        // {display: flex; align-items: center; justify-content: space-between;
+        //             height: 90px; width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);}
+
         return(<div className='header'>
-                <div className='header-part1' >
+                <div className='header-part1' style={{display:'flex',justifyContent:'space-between',alignItems:'center',
+                                                        height:'90px',width:'100%', borderBottom:'1.5px solid rgba(189,185,185,0.703)'}}>
                         <div className='logo-section'>
                                 <img src={logo} className="App-logo" alt="logo" />
                                 <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
