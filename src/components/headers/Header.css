@@ -1,5 +1,5 @@
-/* .header .header-part1{ display: flex !important; align-items: center; justify-content: space-between; height: 90px; 
-                      width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);} */
+.header .header-part1{ display: flex !important; align-items: center; justify-content: space-between; height: 90px; 
+                      width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);}
 
 
 .header-part1 .logo-section{display: flex; margin: 10px;}
