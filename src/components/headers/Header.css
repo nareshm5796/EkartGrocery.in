@@ -1,5 +1,8 @@
-.header .header-part1{ display: flex !important; align-items: center; justify-content: space-between; height: 90px; 
-              width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);}
+/* .header .header-part1{ display: flex !important; align-items: center; justify-content: space-between; height: 90px; 
+                      width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);} */
+
+.header .header-part1{display: flex; align-items: center; justify-content: space-between;
+                    height: 90px; width: 100%; border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);}
 
 .header-part1 .logo-section{display: flex; margin: 10px;}
 .header-part1 .logo-section img{width: 140px; margin-right: 15px;}
@@ -28,14 +31,14 @@
 .header-part1 .Menu-section .menu-items li button .icon{font-size: 24px; padding-right: 5px; position: relative;}                                          
 .header-part1 .Menu-section .menu-items .badge1{width: 20px; height: 20px; border-radius: 50px; background: rgba(59, 183, 126, 0.8); color: #fff; font-size: small;font-weight: 600;
                                                 display: flex; align-items: center; justify-content: center; 
-                                                position: absolute; top:35px; right: 425px;}
+                                                position: absolute; top:20px; right: 425px;}
 
 .header-part1 .Menu-section .menu-items .badge2{width: 20px; height: 20px; border-radius: 50px; background: rgba(59, 183, 126, 0.8); color: #fff; font-size: small;font-weight: 600;
                                                 display: flex; align-items: center; justify-content: center; 
-                                                position: absolute; top:35px; right: 290px;}
+                                                position: absolute; top:20px; right: 290px;}
 .header-part1 .Menu-section .menu-items .badge3{width: 20px; height: 20px; border-radius: 50px; background: rgba(59, 183, 126, 0.8); color: #fff; font-size: small;font-weight: 600;
                                                 display: flex; align-items: center; justify-content: center; 
-                                                position: absolute; top:35px; right: 175px;}
+                                                position: absolute; top:20px; right: 175px;}
 
 
 
@@ -60,6 +63,6 @@
 .header-part2 .nav .nav-bar .nav-item a:hover{color: rgba(59, 183, 126, 0.8);}
 
 .select{z-index: 1 !important;}
-.VendorDropDown{position: absolute; top: 155px !important; z-index: 1 !important;}
-.megaMenuDropDown{ width: 100% ; position: absolute;  top: 155px !important; right: 0px; 
+.VendorDropDown{position: absolute; top: 142px !important; z-index: 1 !important;}
+.megaMenuDropDown{ width: 100% ; position: absolute;  top: 162px !important; right: 0px; 
                   background-color: rgb(255, 255, 255); z-index: 1 !important; }
