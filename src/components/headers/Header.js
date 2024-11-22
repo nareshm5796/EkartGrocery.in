@@ -27,7 +27,7 @@ const Header=()=>{
         const [megaopen, setmegaopen] = useState(false);
 
         return(<div className='header'>
-                <div className='header-part1' style={{display: 'flex', alignItems:'center',justifyContent:'space-between', marginTop:'15px'}}>
+                <div className='header-part1' style={{display: 'flex', alignItems:'center',justifyContent:'space-between'}}>
                         <div className='logo-section'>
                                 <img src={logo} className="App-logo" alt="logo" />
                                 <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
@@ -57,7 +57,7 @@ const Header=()=>{
                                         <div className='VendorDropDown' onClick={()=>setvenderDropdownVisible(false)} onMouseLeave={()=>setvenderDropdownVisible(false)}>
                                                 {isvenderDropdownVisible && (<VendorDropDown/>)}
                                         </div>
-                                        <li className='nav-item'><button className='Mega-menu-btn' onClick={()=>setmegaopen(!megaopen)} onMouseLeave={()=>setmegaopen(false)} onMouseEnter={()=>setmegaopen(true)}   >Mega Menu<KeyboardArrowDownOutlinedIcon/></button></li>
+                                        <li className='nav-item'><button className='Mega-menu-btn' onClick={()=>setmegaopen(!megaopen)}  onMouseEnter={()=>setmegaopen(true)}   >Mega Menu<KeyboardArrowDownOutlinedIcon/></button></li>
                                         
                                         <li className='nav-item'><Link to='/blogs'>Blogs</Link></li>
                                         <li className='nav-item'><Link to='/contact'>Contact</Link></li>

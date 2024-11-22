@@ -61,5 +61,5 @@
 
 .select{z-index: 1 !important;}
 .VendorDropDown{position: absolute; top: 155px !important; z-index: 1 !important;}
-.megaMenuDropDown{ width: 100% ;position: absolute;  top: 155px !important; right: 0px; 
+.megaMenuDropDown{ width: 100% ; position: absolute;  top: 155px !important; right: 0px; 
                   background-color: rgb(255, 255, 255); z-index: 1 !important; }
