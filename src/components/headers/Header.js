@@ -57,7 +57,7 @@ const Header=()=>{
                                         <div className='VendorDropDown' onClick={()=>setvenderDropdownVisible(false)} onMouseLeave={()=>setvenderDropdownVisible(false)}>
                                                 {isvenderDropdownVisible && (<VendorDropDown/>)}
                                         </div>
-                                        <li className='nav-item'><button onClick={()=>setmegaopen(!megaopen)} onMouseEnter={()=>setmegaopen(true)}  className='Mega-menu-btn' >Mega Menu<KeyboardArrowDownOutlinedIcon/></button></li>
+                                        <li className='nav-item'><button className='Mega-menu-btn' onClick={()=>setmegaopen(!megaopen)} onMouseLeave={()=>setmegaopen(false)} onMouseEnter={()=>setmegaopen(true)}   >Mega Menu<KeyboardArrowDownOutlinedIcon/></button></li>
                                         
                                         <li className='nav-item'><Link to='/blogs'>Blogs</Link></li>
                                         <li className='nav-item'><Link to='/contact'>Contact</Link></li>
