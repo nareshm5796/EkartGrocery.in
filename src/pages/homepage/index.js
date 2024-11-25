@@ -1,14 +1,40 @@
 import React, { useState } from 'react'; // Fixed incorrect useState import
 import './style.css';
 import SliderComp from "../../components/Slider/Slider";
+import SimpleSlider from '../../components/categorySlider/CategorySlider';
+
+import Cat1 from "../../../src/components/assets/Category/cat-1.png"
+import Cat2 from "../../../src/components/assets/Category/cat-2.png"
+import Cat3 from "../../../src/components/assets/Category/cat-3.png"
+import Cat4 from "../../../src/components/assets/Category/cat-4.png"
+import Cat5 from "../../../src/components/assets/Category/cat-5.png"
+import Cat6 from "../../../src/components/assets/Category/cat-6.png"
+import Cat7 from "../../../src/components/assets/Category/cat-7.png"
+import Cat8 from "../../../src/components/assets/Category/cat-8.png"
+import Cat9 from "../../../src/components/assets/Category/cat-9.png"
+import Cat10 from "../../../src/components/assets/Category/cat-10.png"
+import Cat11 from "../../../src/components/assets/Category/cat-11.png"
 
 
 const Home = () => {
   const [active, setActive] = useState(1); // Initialize state for active button
-  const data= [{image:'url1', Name:'fruit1',count: 11},
-              {image:'url2', Name:'fruit3',count: 10},
-              {image:'url3', Name:'fruit4',count: 15}
-              ];
+  const names = [
+    { image: Cat1, Name: 'Vegetables', count: 11, background: 'rgb(242, 252, 228)' },
+    { image: Cat2, Name: 'Strawberry', count: 10, background: 'rgb(255, 252, 235)' },
+    { image: Cat3, Name: 'Peach', count: 15, background: 'rgb(236, 255, 236)' },
+    { image: Cat4, Name: 'Red Apple', count: 12, background: 'rgb(254, 239, 234)' },
+    { image: Cat5, Name: 'fruit4', count: 10, background: 'rgb(255, 243, 235)' },
+    { image: Cat6, Name: 'fruit4', count: 22, background: 'rgb(255, 243, 255)' },
+    { image: Cat7, Name: 'fruit4', count: 10, background: 'rgb(242, 252, 228)' },
+    { image: Cat8, Name: 'Organic Kiwi', count: 12, background: 'rgb(254, 239, 234)' },
+    { image: Cat9, Name: 'Cake & Milk', count: 15, background: 'rgb(242, 252, 228)' },
+    { image: Cat10, Name: 'fruit4', count: 15, background: 'rgb(254, 239, 234)' },
+    { image: Cat11, Name: 'fruit4', count: 11, background: 'rgb(236, 255, 236)' },
+    { image: Cat6, Name: 'fruit4', count: 1, background: 'rgb(255, 243, 255)' },
+    { image: Cat2, Name: 'fruit4', count: 8, background: 'rgb(242, 252, 228)' },
+    { image: Cat9, Name: 'fruit4', count: 15, background: 'rgb(236, 255, 236)' },
+    { image: Cat1, Name: 'fruit4', count: 19, background: 'rgb(255, 243, 255)' },
+  ];
 
   return (
     <div className="home-container">
@@ -61,10 +87,8 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className='featured-item'> 
-          <ul style={{listStyle:'none'}}>
-            {data.map((item)=>(<li>{item.Name}</li>))}
-          </ul>
+        <div className='featured-item'>
+          <SimpleSlider names={names} / > 
         </div>
       </div>
     </div>
@@ -72,3 +96,4 @@ const Home = () => {
 };
 
 export default Home;
+
