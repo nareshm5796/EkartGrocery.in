@@ -5,3 +5,4 @@
 .Featured-container .nav ul li{list-style: none; margin-left:10px; padding: 0px 10px;}
 .Featured-container .nav ul li button{font-size: 18px; font-weight: 600; transition: all 0.3s ease-in-out; }
 .Featured-container .nav ul li button:hover{ color: rgba(59, 183, 126, 0.8) !important; transform: translateY(-5px); }
+

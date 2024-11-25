@@ -2,8 +2,13 @@ import React, { useState } from 'react'; // Fixed incorrect useState import
 import './style.css';
 import SliderComp from "../../components/Slider/Slider";
 
+
 const Home = () => {
   const [active, setActive] = useState(1); // Initialize state for active button
+  const data= [{image:'url1', Name:'fruit1',count: 11},
+              {image:'url2', Name:'fruit3',count: 10},
+              {image:'url3', Name:'fruit4',count: 15}
+              ];
 
   return (
     <div className="home-container">
@@ -14,9 +19,7 @@ const Home = () => {
             <h1>Featured Categories</h1>
           </div>
           <div>
-            <ul>
-              <li>
-                <button
+            <ul><li><button
                   onClick={() => setActive(1)} // Set active state
                   style={{
                     color: active === 1 ? 'rgba(59, 183, 126, 0.8)' : 'black', // Conditional color
@@ -57,6 +60,11 @@ const Home = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className='featured-item'> 
+          <ul style={{listStyle:'none'}}>
+            {data.map((item)=>(<li>{item.Name}</li>))}
+          </ul>
         </div>
       </div>
     </div>
