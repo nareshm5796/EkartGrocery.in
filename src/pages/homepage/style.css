@@ -1,8 +1,21 @@
 .home-container{margin:15px;}
-.Featured-container .nav{padding: 10px 0px; display: flex; align-items: center; gap: 20; }
+.Featured-container{margin:30px 0px; padding-top: 20px; }
+.Featured-container .nav{ display: flex; align-items: center; gap: 20; }
 .Featured-container .nav .head1 h1{font-weight: 800; padding-right: 15px;}
 .Featured-container .nav ul{display: flex; padding-left: 15px;}
 .Featured-container .nav ul li{list-style: none; margin-left:10px; padding: 0px 10px;}
 .Featured-container .nav ul li button{font-size: 18px; font-weight: 600; transition: all 0.3s ease-in-out; }
 .Featured-container .nav ul li button:hover{ color: rgba(59, 183, 126, 0.8) !important; transform: translateY(-5px); }
 
+.featured-item{ margin:0px; margin-bottom: 0px;}
+
+.banner-part{position: relative; margin: 10px 0px; margin-right: 11px; text-align: left; transition: all 0.2s ease-in-out;}
+.banner-part:hover{transform: scale(1.03);}
+.banner-part .banner-img-part img{ width: 400px; height: auto; border-radius: 10px; }
+.banner-part .banner-info-part{position: absolute; z-index: 1 !important; top: 25px !important; left: 40px;
+                                 width: 60%;}
+.banner-part .banner-info-part h1{opacity: 0.7; font-weight: 600; margin: 10px 0px;}                                 
+.banner-part .banner-info-part button{background-color: green; color: #fff; padding: 10px 15px; margin-top: 25px;
+                                      font-weight: 500; opacity: 0.8; border-radius: 5px;
+                                      display: flex; align-items: center;}
+.banner-part .banner-info-part button span svg{font-size: 18px !important;  display: flex; align-items: center; margin-left:10px !important ;}     

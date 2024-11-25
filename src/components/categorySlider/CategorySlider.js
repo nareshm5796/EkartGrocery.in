@@ -6,21 +6,23 @@ import './CategorySlider.css'
 
 const SimpleSlider = ({ names }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
-    slidesToScroll: 2
+    slidesToShow: 8,
+    slidesToScroll: 3
   };
 
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} className="slider1">
       {names.map((item, index) => (
           <div key={index}>
              <div className = "category-card" style={{background:item.background}}> 
+                <button className="btn1"> 
                 <img className = "category-card-img" src={item.image} alt={item.Name} />
-                <h5 className = "category-card-title">{item.Name}</h5>
+                <h4 className = "category-card-title">{item.Name}</h4>
+                </button>
                 <p className = "category-card-count">{item.count} items</p>
               </div>   
           </div>
