@@ -27,7 +27,8 @@ const Header=()=>{
         const [megaopen, setmegaopen] = useState(false);
 
         return(<div>
-                <div className='header-part1' style={{display:'flex',justifyContent:'space-between',marginTop:'15px'}}>
+                <div className='header-part1' style={{display:'flex',justifyContent:'space-between', marginTop:'15px', height:'90px', 
+                width: '100%', borderBottom: '1.5px solid rgba(189, 185, 185, 0.703'}}>
                         <div className='logo-section'>
                                 <img src={logo} className="App-logo" alt="logo" />
                                 <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
