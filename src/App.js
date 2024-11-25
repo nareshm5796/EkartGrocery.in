@@ -10,6 +10,7 @@ import Blogs from './pages/blogspage';
 function App() {
   return (
     <div className="App">
+      <script src="http://localhost:8097"></script>
       <Header/>
       <div className='main-body'>
         <Routes >
