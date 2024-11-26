@@ -15,7 +15,8 @@ const SliderComp = ()=>{
     slidesToScroll: 1,
     autoplay: true,      
     autoplaySpeed: 3000,
-    pauseOnHover: false,   
+    pauseOnHover: false, 
+    // fade:true,  
   };
   return(
         <div className="slide-container">

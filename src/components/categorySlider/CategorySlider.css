@@ -1,0 +1,16 @@
+.category-card{margin: 15px 15px 15px 0px; padding: 20px;  border-radius: 10px; text-align: center; display: flex; flex-direction: column; align-items: center; 
+                justify-content: center; transition: all 0.3s ease-in-out;  }
+.category-card:hover{transform: scale(1.05); box-shadow: 0px 0px 12px rgb(197, 197, 197);}         
+.category-card .btn1 .category-card-img{width: 85px; height:auto; margin-bottom: 15px;}
+.category-card .btn1 .category-card-title{margin-bottom: 5px; font-weight:900; }
+.category-card .category-card-count{font-size: 12px; opacity: 0.7;}
+
+.slider1 .slick-prev{position:relative !important; z-index: 1; top: -35px !important; left: 90% !important;}
+.slider1 .slick-prev:before{ position:absolute !important; 
+                    font-size: 40px !important; color: rgba(176, 167, 167, 0.8)!important;}
+
+.slick-slider{margin: 0px !important; padding: 0px !important;}
+.slider1 .slick-next{margin-right: 10px !important;}
+.slider1 .slick-next:before{ position:absolute !important; right: 30px !important ; top: -138px; 
+                    font-size: 40px !important; color: rgba(176, 170, 170, 0.8)!important;}
+
