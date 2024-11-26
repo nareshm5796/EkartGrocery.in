@@ -20,7 +20,11 @@ import banner1 from '../../../src/components/assets/Category/banner1.png'
 import banner2 from '../../../src/components/assets/Category/banner2.png'
 import banner3 from '../../../src/components/assets/Category/banner3.png'
 
+import { products } from "./productsdata";
+import Card from "../../components/products/Card"
+
 const Home = () => {
+  // const [filteredProducts, setFilteredProducts] = useState(products);
   const [active, setActive] = useState(1); // Initialize state for active button
   const names = [
     { image: Cat1, Name: 'Vegetables', count: 11, background: 'rgb(242, 252, 228)' },
@@ -39,15 +43,31 @@ const Home = () => {
     { image: Cat9, Name: 'Cake & Milk', count: 15, background: 'rgb(236, 255, 236)' },
     { image: Cat1, Name: 'Vegetables', count: 19, background: 'rgb(255, 243, 255)' },
   ];
+  // for scroll detecting
+  document.addEventListener("scroll", () => {
+    const banners = document.querySelectorAll(".f-banner");
+    
+    banners.forEach((banner) => {
+      const rect = banner.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isVisible) {
+        banner.classList.add("show");
+      }
+    });
+  });
+  
 
   return (
     <div className="home-container">
       <SliderComp />
+      {/* Feature container */}
       <div className="Featured-container">
         <div className="nav">
           <div className="head1">
             <h1>Featured Categories</h1>
           </div>
+          {/*Feature container -- Menu starts from here.. */}
           <div>
             <ul><li><button
                   onClick={() => setActive(1)} // Set active state
@@ -90,11 +110,12 @@ const Home = () => {
               </li>
             </ul>
           </div>
+          {/* Feature container -- Cards and banner images */}
         </div>
         <div className='featured-item'>
             <div>
               <SimpleSlider names={names} />
-              <div style={{ width:'100%', display:'flex',justifyContent:'space-between' }}>
+              <div className='f-banner' style={{ width:'100%', display:'flex',justifyContent:'space-between' }}>
                 <button className='banner-part'>
                   <div className='banner-img-part'>
                     <img src={banner1} alt='text1'/>
@@ -127,11 +148,52 @@ const Home = () => {
         </div>
       </div>
       {/* Product container */}
-      <div>
+      <div className="product-container Featured-container">
+        {/* Product container -- Menu bar starts here..*/}
         <div className="head1">
           <h1>Popular Products</h1>
         </div>
+        <div className="nav">
+            <ul>
+              <li><button onClick={() => setActive(1)} 
+                  style={{color: active === 1 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                  >All</button>
+              </li>
+              <li>
+                <button onClick={() => setActive(2)} // Set active state
+                  style={{color: active === 2 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                >Baking Material</button>
+              </li>
+              <li>
+                <button onClick={() => setActive(3)} // Set active state
+                  style={{color: active === 3 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                >Fresh Fruits</button>
+              </li>
+              <li>
+                <button onClick={() => setActive(4)} // Set active state
+                  style={{color: active === 4 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                >Milk & Diries</button>
+              </li>
+              <li>
+                <button onClick={() => setActive(5)} // Set active state
+                  style={{color: active === 5 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                >Meats</button>
+              </li>
+              <li>
+                <button onClick={() => setActive(6)} // Set active state
+                  style={{color: active === 6 ? 'rgba(59, 183, 126, 0.8)' : 'black',}}
+                >Vegetables</button>
+              </li>
+            </ul>
+        </div>
+        
       </div>
+      {/* Products- Cards  */}
+      <div className='products-card'>
+          {products.map((product) => (
+            <Card key={product.id} product={product} />
+          ))}
+        </div>
     </div>
   );
 };

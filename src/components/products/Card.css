@@ -1,0 +1,31 @@
+.card-container {border: 1px solid #ddd;border-radius: 10px; max-width: 250px; 
+        text-align: center; padding: 16px; margin: 10px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.card-container:hover {transform: scale(1.05);box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);}
+      
+/* Top-left label */
+.card-label-green {position: absolute;top: 0px;left: 0px;background-color: rgba(59, 183, 126, 0.8);color: white;
+                   padding: 8px 18px;font-size: 12px;font-weight: bold;text-transform: uppercase;
+                   z-index: 1; border-top-left-radius: 10px; border-bottom-right-radius: 15px;}
+      
+/* Image Styling */
+.card-container img {width: 100%;height: auto;border-radius: 8px;transition: transform 0.3s ease, opacity 0.3s ease;}
+      
+/* Tooltip */
+.card-container:hover img {transform: scale(1.1);opacity: 0.8;}
+      
+.card-tooltip {position: absolute;bottom: 50%;left: 50%;transform: translate(-50%, 50%);
+        background-color: rgba(0, 0, 0, 0.7);color: white;padding: 4px 8px;border-radius: 4px;
+        font-size: 12px;visibility: hidden;opacity: 0;transition: opacity 0.3s ease;}
+      
+.card-container:hover .card-tooltip {visibility: visible;opacity: 1;}
+      
+/* Add Button Styling */
+.card-add-button {background-color: rgba(59, 183, 126, 0.8);color: #fff;border-radius: 4px;padding: 10px 16px;
+        font-size: 14px;display: flex;align-items: center;justify-content: center;cursor: pointer;}
+      
+.card-add-button:hover {background-color: #145ca8;}
+
+.card-add-button svg {margin-right: 4px;}
+      
