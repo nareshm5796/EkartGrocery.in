@@ -94,7 +94,7 @@ const Home = () => {
         <div className='featured-item'>
             <div>
               <SimpleSlider names={names} />
-              <div style={{width:'100%', display:'flex',justifyContent:'space-between' }}>
+              <div style={{ width:'100%', display:'flex',justifyContent:'space-between' }}>
                 <button className='banner-part'>
                   <div className='banner-img-part'>
                     <img src={banner1} alt='text1'/>
