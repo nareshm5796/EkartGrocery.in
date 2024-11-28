@@ -22,6 +22,12 @@ import banner3 from '../../../src/components/assets/Category/banner3.png'
 
 import { products } from "./productsdata";
 import Card from "../../components/products/Card"
+import Banner5 from "../../components/assets/DailyDeals/banner-5-min.png"
+import Banner6 from "../../components/assets/DailyDeals/banner-6-min.png"
+import Banner7 from "../../components/assets/DailyDeals/banner-7-min.png"
+import Banner8 from "../../components/assets/DailyDeals/banner-8-min.png"
+import DealsOfTheDay from "../../components/DealsoftheDay/DealsOfTheDay"
+
 
 const Home = () => {
   // const [filteredProducts, setFilteredProducts] = useState(products);
@@ -43,6 +49,13 @@ const Home = () => {
     { image: Cat9, Name: 'Cake & Milk', count: 15, background: 'rgb(236, 255, 236)' },
     { image: Cat1, Name: 'Vegetables', count: 19, background: 'rgb(255, 243, 255)' },
   ];
+
+  // Deals of the day data 
+  const Deals_of_the_day_imgs = [{id:1, dealimg:Banner5}, 
+                                  {id:2, dealimg:Banner6}, 
+                                  {id:3, dealimg:Banner7},
+                                  {id:4, dealimg:Banner8}];
+
   // for scroll detecting
   document.addEventListener("scroll", () => {
     const banners = document.querySelectorAll(".f-banner");
@@ -185,16 +198,25 @@ const Home = () => {
                 >Vegetables</button>
               </li>
             </ul>
-        </div>
-        
+        </div> 
       </div>
       {/* Products- Cards  */}
       <div className='products-card'>
           {products.map((product) => (
             <Card key={product.id} product={product} />
           ))}
-        </div>
+      </div>
+          {/* Deals Of The Day --container */}
+          <div className="head1">
+          <h1>Deals Of The Day</h1>
+      </div>
+      <div className='DealsOfTheDay-cards'>
+        {Deals_of_the_day_imgs.map((deals)=>(
+          <DealsOfTheDay key={deals.id} deals={deals} />
+        ))}
+      </div>    
     </div>
+    
   );
 };
 
