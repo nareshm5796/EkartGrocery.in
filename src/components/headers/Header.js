@@ -46,7 +46,7 @@ const Header=()=>{
                                </div>
                         </div>
                 </div>
-                <div className='header-part2'>
+                <div className='header-part2 ' >
                         <div className='browser-all'><button className='browse-btn'><GridViewOutlinedIcon/><span>Browse All Categories</span><KeyboardArrowDownOutlinedIcon/></button></div>
                         <div className='nav' >
                                 <ul className='nav-bar' onMouseLeave={()=>setvenderDropdownVisible(false)}  >
@@ -65,8 +65,6 @@ const Header=()=>{
                                 </ul>
                                
                         </div>
-
-
                 </div>
                  <div className='megaMenuDropDown' onClick={()=>setmegaopen(false)} onMouseLeave={()=>setmegaopen(false)}>
                  {megaopen && (<MegaDropDown/>)}

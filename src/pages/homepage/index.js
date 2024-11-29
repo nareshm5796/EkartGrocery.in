@@ -51,10 +51,10 @@ const Home = () => {
   ];
 
   // Deals of the day data 
-  const Deals_of_the_day_imgs = [{id:1, dealimg:Banner5}, 
-                                  {id:2, dealimg:Banner6}, 
-                                  {id:3, dealimg:Banner7},
-                                  {id:4, dealimg:Banner8}];
+  const Deals_of_the_day_imgs = [{id:1, dealimg:Banner5, title:'Organic Cage Grade', rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0}, 
+                                  {id:2, dealimg:Banner6, title:'Naturally Flavored Cinnamon', rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0}, 
+                                  {id:3, dealimg:Banner7, title:'Seeds of Change Organic', rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0},
+                                  {id:4, dealimg:Banner8, title:'Dried fruit: apricots',rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0}];
 
   // for scroll detecting
   document.addEventListener("scroll", () => {

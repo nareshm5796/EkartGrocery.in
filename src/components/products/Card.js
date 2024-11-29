@@ -35,15 +35,14 @@ const Card = ({ product }) => {
       {/* Title */}
       <button  className="card-title-button">
         <p className='card-heading'>{product.title}</p>
-        
       </button>
 
       {/* Rating */}
       <div className="card-rating">
-      <Stack  spacing={1}>    
-        <Rating name="half-rating-read" defaultValue={product.rating} precision={0.5} readOnly />  
-      </Stack>
-      <p>{product.rating}</p>
+        <Stack  spacing={1}>    
+          <Rating name="half-rating-read" defaultValue={product.rating} precision={0.5} readOnly />  
+        </Stack>
+        <p>{product.rating}</p>
       </div>
 
       {/* Brand with Link */}
@@ -57,10 +56,11 @@ const Card = ({ product }) => {
           <p className="current-price">${product.price.toFixed(2)}</p>
           <p className="old-price">${product.oldPrice.toFixed(2)}</p>
         </div>
+        {/* Add to Cart Button */}
         <div className="card-add-button"><ShoppingCartIcon fontSize="small" />Add</div>
       </div>
 
-      {/* Add to Cart Button */}
+      
       
 </div>
   );

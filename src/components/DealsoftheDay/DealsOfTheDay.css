@@ -1,2 +1,7 @@
-.deals-card{gap: 10px; margin: 20px 0px ;  margin-right: 10px; padding: 5px; position: relative;}
-.deals-card-img{border-radius: 10px;}
+.deals-card{  gap: 10px; margin: 20px 0px ;  margin-right: 10px; padding: 5px;}
+.deals-card-img{border-radius: 10px; position: relative !important;}
+.deals-card-timer{ position: absolute !important; bottom: -45px; left: 13%;  transition: all 0.4s ease-in-out; }
+.deals-card-timer:hover{bottom: -35px; }
+.deals-info{background-color: #fff; border-radius: 10px; padding: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+               }
+ 

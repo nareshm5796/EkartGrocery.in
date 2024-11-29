@@ -1,0 +1,5 @@
+.Date-card{ display: flex; justify-content: space-between;  margin: 10px 15px; }
+.Date-card .card-item{margin: 5px; padding: 10px; background-color: #fff; border-radius: 6px; text-align: center;
+                        font-size: 14px;  width: 30px;}
+.Date-card .card-item span{color: rgba(59, 183, 126, 0.9); font-weight: 600;} 
+.Date-card .card-item p{font-size: 12px; opacity: 0.7;}                      
