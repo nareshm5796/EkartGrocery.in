@@ -11,6 +11,6 @@
 
 .slick-slider{margin: 0px !important; padding: 0px !important;}
 .slider1 .slick-next{margin-right: 10px !important;}
-.slider1 .slick-next:before{ position:absolute !important; right: 30px !important ; top: -138px; 
+.slider1 .slick-next:before{ position:absolute !important; right: 30px !important ; top: -140px; 
                     font-size: 40px !important; color: rgba(176, 170, 170, 0.8)!important;}
 

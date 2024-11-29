@@ -10,7 +10,7 @@ import Blogs from './pages/blogspage';
 function App() {
   return (
     <div className="App">
-      <Header / >
+      <Header/>
       <div className='main-body'>
         <Routes >
         <Route path="/" element={<Home />} />
@@ -20,7 +20,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
-      
     </div>
   );
 }

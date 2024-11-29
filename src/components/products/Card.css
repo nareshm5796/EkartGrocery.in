@@ -1,4 +1,4 @@
-.card-container {border: 1px solid #ddd;border-radius: 10px; max-width: 250px; 
+.card-container {border: 1px solid #ddd;border-radius: 10px; 
         text-align: left; padding: 16px; margin: 10px; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: relative;
         transition: transform 0.3s ease, box-shadow 0.3s ease;}
