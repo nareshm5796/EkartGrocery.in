@@ -201,7 +201,7 @@ const Home = () => {
         </div> 
       </div>
       {/* Products- Cards  */}
-      <div className='products-card'>
+      <div className='products-card' style={{display:'flex'}}>
           {products.map((product) => (
             <Card key={product.id} product={product} />
           ))}

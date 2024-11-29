@@ -1,8 +1,8 @@
 .card-container {border: 1px solid #ddd;border-radius: 10px; 
-        text-align: left; padding: 16px; margin: 10px; 
+        text-align: left; padding: 16px; margin-right: 7px; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: relative;
         transition: transform 0.3s ease, box-shadow 0.3s ease;}
-.card-container:hover {transform: scale(1.05);box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);}
+.card-container:hover {transform: scale(1.01);box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);}
       
 /* Top-left label */
 .card-label-green {position: absolute;top: 0px;left: 0px;background-color: rgba(59, 183, 126, 0.8);color: white;

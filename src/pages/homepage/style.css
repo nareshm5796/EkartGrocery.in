@@ -24,5 +24,5 @@
 
 /* Product container styles */
 .product-container{display: flex; align-items: center; justify-content: space-between;}
-.products-card{display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;}
+.products-card{display: flex !important; align-items: center; justify-content: space-between; margin-bottom: 15px;}
 .DealsOfTheDay-cards{display: flex; align-items: center; justify-content: space-between;}
