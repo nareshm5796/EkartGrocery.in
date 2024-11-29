@@ -28,7 +28,7 @@ const Header=()=>{
 
         return(<div>
                 <div className='header-part1' style={{display:'flex',justifyContent:'space-between',alignItems:'center', height:'90px', 
-                width: '100%', borderBottom: '1.5px solid rgba(189, 185, 185, 0.703'}}>
+                 borderBottom: '1.5px solid rgba(189, 185, 185, 0.703'}}>
                         <div className='logo-section' style={{display: 'flex', margin: '10px'}}>
                                 <img src={logo} className="App-logo" alt="logo" />
                                 <div className='searchbar'><input type='text' placeholder='Search for products...'/><button>Search</button></div>
