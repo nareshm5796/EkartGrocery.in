@@ -25,4 +25,12 @@
 /* Product container styles */
 .product-container{display: flex; align-items: center; justify-content: space-between;}
 .products-card{display: flex !important; align-items: center; justify-content: space-between; margin-bottom: 15px;}
-.DealsOfTheDay-cards{display: flex; align-items: center; justify-content: space-between;}
+.DealsOfTheDay-cards{display: flex; align-items: center; justify-content: space-between; }
+
+.top-selling{margin-top: 20px; padding: 15px 5px; }
+.top-selling-head{display: flex; align-items: center; justify-content: space-between; 
+                margin-top: 15px; padding: 10px 0px;}
+.top-selling-heading{border-bottom: 1px solid rgba(0,0,0,0.2); width: 20%; padding-top: 10px; opacity: 0.7;}                
+.top-selling-heading h3{padding-bottom: 10px; margin-bottom: 5px;}
+.top-selling-heading p{border-bottom: 3px solid rgba(120, 222, 174, 0.9); width: 30%;}
+.top-selling-content{display: grid; grid-template-columns: repeat(4, 1fr);gap: 10px; }

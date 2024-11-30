@@ -26,7 +26,20 @@ import Banner5 from "../../components/assets/DailyDeals/banner-5-min.png"
 import Banner6 from "../../components/assets/DailyDeals/banner-6-min.png"
 import Banner7 from "../../components/assets/DailyDeals/banner-7-min.png"
 import Banner8 from "../../components/assets/DailyDeals/banner-8-min.png"
+
 import DealsOfTheDay from "../../components/DealsoftheDay/DealsOfTheDay"
+import TopData from "../../components/TopData/TopData"
+// Top Selling Images 
+import TopSellingImg1 from "../../components/assets/topProducts/product-1-1.jpg"
+import TopSellingImg2 from "../../components/assets/topProducts/product-2-1.jpg"
+import TopSellingImg3 from "../../components/assets/topProducts/product-3-1.jpg"
+import TopSellingImg4 from "../../components/assets/topProducts/product-4-1.jpg"
+import TopSellingImg5 from "../../components/assets/topProducts/product-5-1.jpg"
+import TopSellingImg6 from "../../components/assets/topProducts/product-6-1.jpg"
+import TopSellingImg7 from "../../components/assets/topProducts/product-7-1.jpg"
+import TopSellingImg8 from "../../components/assets/topProducts/product-8-1.jpg"
+import TopSellingImg9 from "../../components/assets/topProducts/product-9-1.jpg"
+
 
 
 const Home = () => {
@@ -55,6 +68,24 @@ const Home = () => {
                                   {id:2, dealimg:Banner6, title:'Naturally Flavored Cinnamon', rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0}, 
                                   {id:3, dealimg:Banner7, title:'Seeds of Change Organic', rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0},
                                   {id:4, dealimg:Banner8, title:'Dried fruit: apricots',rating:2.5, brand: "Orange ", price: 10.75, oldPrice: 15.0}];
+    // Top Selling Data 
+  const topSellingData =[{id:1, title:'Seeds of Change Organic Red Rice', rating:'3.5', price: 10, oldPrice:14, img:TopSellingImg1},
+                         {id:2, title:'Angie’s Sweet & Salty Kettle Corn',rating:'4.5', price: 50, oldPrice:64, img:TopSellingImg2},
+                         {id:3, title:'Foster Farms Takeout Crispy Classic', rating:'3.5', price: 20, oldPrice:30, img:TopSellingImg3},
+                         {id:4, title:'Haagen Caramel Cone Ice Cream Boxed', rating:'1.5', price: 15, oldPrice:30, img:TopSellingImg4},
+                         {id:5, title:'Gorton’s Beer Battered Fish Fillets', rating:'3.5', price: 18, oldPrice:25, img:TopSellingImg5},
+                         {id:6, title:'Seeds of Change Organic Watermelon', rating:'4.5', price: 90, oldPrice:105, img:TopSellingImg6},
+                         {id:7, title:'Naturally Flavored Cinnamon Vanilla', rating:'2.5', price: 100, oldPrice:140, img:TopSellingImg7},
+                         {id:8, title:'Organic Cage Grade A Large Eggs', rating:'3.5', price: 10, oldPrice:14, img:TopSellingImg8},
+                         {id:9, title:'All Natural Style Chicken Meatballs', rating:'1.5', price: 109, oldPrice:115, img:TopSellingImg9},
+                         {id:10, title:'Seeds of Change Organic Red Rice', rating:'3.5', price: 50, oldPrice:140, img:TopSellingImg1},
+                         {id:11, title:'Seeds of Change Organic Red Rice', rating:'4.5', price: 190, oldPrice:205, img:TopSellingImg6},
+                         {id:12, title:'Foster Farms Takeout Crispy Classic', rating:'3.5', price: 210, oldPrice:300, img:TopSellingImg3},
+
+  ]  
+
+
+
 
   // for scroll detecting
   document.addEventListener("scroll", () => {
@@ -215,7 +246,21 @@ const Home = () => {
           <DealsOfTheDay key={deals.id} deals={deals} />
         ))}
       </div>
-      {/* Deals Of The Day --container */}
+      {/* Top SElling Part  */}
+      <div className='top-selling'>
+        <div className='top-selling-head'> 
+          <div className='top-selling-heading'><h3>Top Selling</h3><p></p></div>
+          <div className='top-selling-heading'><h3>Trending Products</h3><p></p></div>
+          <div className='top-selling-heading'><h3>Recently added</h3><p></p></div>
+          <div className='top-selling-heading'><h3>Top Rated</h3><p></p></div>
+        </div>
+        <div className='top-selling-content'>
+          {topSellingData.map((data)=>(
+            <TopData key={data.id} data= {data}/>
+          ))}
+
+        </div>
+      </div>
 
     </div> 
   );

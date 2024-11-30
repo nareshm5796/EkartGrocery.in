@@ -43,8 +43,8 @@
 
 /* ******************************** */
 /* when scroll header class fixed is work  */
-.header-part2.fixed{position: fixed !important; background-color: #fff; width: 100%; z-index: 1000; top: 0; transition: all 0.1s ease-in-out;
-        padding: 10px;  height: 50px;}
+.header-part2.fixed{position: fixed !important; background-color: #fff; width: 99%; z-index: 1000; top: 0; transition: all 0.1s ease-in-out;
+        padding: 10px;  }
 .header-part2{background-color: #fff;
         height: auto; display: flex; align-items: center; justify-content: space-between; padding: 10px;
         border-bottom: 1px solid rgba(189, 185, 185, 0.703);}

@@ -1,0 +1,11 @@
+.TopSellCard{ display: flex; align-items: center; width: 100%; height: auto;
+                padding: 4px 0px; margin: 5px 0px;transition: all 0.3s ease-in-out; }
+.TopSellCard:hover{transform: translateY(-10px);}
+
+.Top-card-img{margin: 0px;padding: 0px; width: 30%; height: auto;}
+.Top-card-info .card-title-button{width: 90% !important; text-align: left;}
+.Top-card-info .card-title-button:hover {color: rgba(59, 183, 126, 0.8);}
+
+.TopSellCard .card-rating{padding-top: 10px !important;}
+
+.TopSellCard .card-price-add{padding-top: 10px !important;}
