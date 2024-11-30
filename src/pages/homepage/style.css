@@ -1,4 +1,4 @@
-.home-container{margin:15px;}
+.home-container{margin:15px; }
 .Featured-container{margin:30px 0px; padding-top: 20px; }
 .Featured-container .nav{ display: flex; align-items: center; gap: 20; }
 .Featured-container .nav .head1 h1{font-weight: 800; padding-right: 15px;}

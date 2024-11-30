@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../headers/Header.css'
 import logo from '../assets/logo.png';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
@@ -18,6 +18,7 @@ import LocalFireDepartmentOutlinedIcon from '@mui/icons-material/LocalFireDepart
 
 
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -25,8 +26,23 @@ const Header=()=>{
         const [isDropdownVisible, setDropdownVisible] = useState(false);
         const [isvenderDropdownVisible, setvenderDropdownVisible] = useState(false);
         const [megaopen, setmegaopen] = useState(false);
+        const headeRef=useRef();
 
-        return(<div>
+        useEffect(()=>{
+                window.addEventListener("scroll",()=>{
+                        let posotion = window.pageYOffset;
+                        if(posotion>100){
+                                headeRef.current.classList.add('fixed')
+
+                        }
+                        else{
+                                headeRef.current.classList.remove('fixed')   
+                        }
+                })
+
+        },[])
+
+        return(<div className='header-wrapper' >
                 <div className='header-part1' style={{display:'flex',justifyContent:'space-between',alignItems:'center', height:'90px', 
                  borderBottom: '1.5px solid rgba(189, 185, 185, 0.703'}}>
                         <div className='logo-section' style={{display: 'flex', margin: '10px'}}>
@@ -46,7 +62,7 @@ const Header=()=>{
                                </div>
                         </div>
                 </div>
-                <div className='header-part2 ' >
+                <div className='header-part2 ' ref={headeRef} >
                         <div className='browser-all'><button className='browse-btn'><GridViewOutlinedIcon/><span>Browse All Categories</span><KeyboardArrowDownOutlinedIcon/></button></div>
                         <div className='nav' >
                                 <ul className='nav-bar' onMouseLeave={()=>setvenderDropdownVisible(false)}  >

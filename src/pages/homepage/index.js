@@ -206,17 +206,18 @@ const Home = () => {
             <Card key={product.id} product={product} />
           ))}
       </div>
-          {/* Deals Of The Day --container */}
-          <div className="head1">
-          <h1>Deals Of The Day</h1>
+      {/* Deals Of The Day --container */}
+      <div className="head1">
+        <h1>Deals Of The Day</h1>
       </div>
       <div className='DealsOfTheDay-cards'>
         {Deals_of_the_day_imgs.map((deals)=>(
           <DealsOfTheDay key={deals.id} deals={deals} />
         ))}
-      </div>    
-    </div>
-    
+      </div>
+      {/* Deals Of The Day --container */}
+
+    </div> 
   );
 };
 

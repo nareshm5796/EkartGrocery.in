@@ -1,4 +1,6 @@
-.header-part1{ display: flex;align-items: center;justify-content: space-between; height: 90px; 
+/* .header-wrapper{position: sticky !important; background-color: #fff; width: 100%; z-index: 1000; top: 0; } */
+
+.header-part1{ display: flex;align-items: center;justify-content: space-between;  
          border-bottom: 1.5px solid rgba(189, 185, 185, 0.703);}
 
 .header-part1 .logo-section{display: flex; margin: 10px;}
@@ -39,10 +41,12 @@
 
 
 
-
-
 /* ******************************** */
-.header-part2{height: auto; display: flex; align-items: center; justify-content: space-between; padding: 10px;
+/* when scroll header class fixed is work  */
+.header-part2.fixed{position: fixed !important; background-color: #fff; width: 100%; z-index: 1000; top: 0; transition: all 0.1s ease-in-out;
+        padding: 10px;  height: 50px;}
+.header-part2{background-color: #fff;
+        height: auto; display: flex; align-items: center; justify-content: space-between; padding: 10px;
         border-bottom: 1px solid rgba(189, 185, 185, 0.703);}
 .header-part2 .browser-all{ height: 50px; width: 280px; background-color: rgba(59, 183, 126, 0.8); border-radius: 5px;
                       display: flex;align-items: center; justify-content: center; transition: all 0.3s ease-out;}
