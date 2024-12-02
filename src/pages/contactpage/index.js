@@ -38,7 +38,7 @@ const Contact = ()=> {
           </div>          
         </div>
       </div>
-      <div style={{display:'flex',alignItems:'center', justifyContent:'space-between'}}>
+      <div style={{display:'flex',alignItems:'center', justifyContent:'space-between', gap:'20px'}}>
         {iconsData.map((icon)=>(
           <ContactCart key={icon.id} icon = {icon}/>
         ))}
