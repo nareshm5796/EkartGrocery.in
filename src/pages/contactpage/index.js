@@ -6,7 +6,7 @@ import './style.css'
 const Contact = ()=> {
   return <div style={{margin:'15px'}}>
       <RecentViewSlider/>
-      <div className="f-banner grocey-deals">
+      <div className=" grocey-deals">
         <div className="slide-container">
           <div className="banner">
             <img src={banner9} alt="banner-2"></img>
