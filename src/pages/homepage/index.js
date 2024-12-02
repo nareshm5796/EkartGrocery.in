@@ -40,6 +40,9 @@ import TopSellingImg7 from "../../components/assets/topProducts/product-7-1.jpg"
 import TopSellingImg8 from "../../components/assets/topProducts/product-8-1.jpg"
 import TopSellingImg9 from "../../components/assets/topProducts/product-9-1.jpg"
 
+// Contact page importing
+import Contact from "../contactpage/index"
+
 
 
 const Home = () => {
@@ -261,7 +264,7 @@ const Home = () => {
 
         </div>
       </div>
-
+          <Contact/>
     </div> 
   );
 };

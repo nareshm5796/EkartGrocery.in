@@ -1,5 +1,5 @@
 .TopSellCard{ display: flex; align-items: center; width: 100%; height: auto;
-                padding: 4px 0px; margin: 5px 0px;transition: all 0.3s ease-in-out; }
+                padding: 4px 0px; margin: 5px 0px; transition: all 0.3s ease-in-out; }
 .TopSellCard:hover{transform: translateY(-10px);}
 
 .Top-card-img{margin: 0px;padding: 0px; width: 30%; height: auto;}
