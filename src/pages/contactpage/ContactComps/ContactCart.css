@@ -1,0 +1,6 @@
+.contact-cart{display: flex;align-items: center; justify-content: flex-start; width: auto; background-color: aliceblue; 
+        margin-right: 15px; padding: 15px 5px; border-radius: 15px;}
+.contact-cart img{width: 20%; margin:0px 15px ;}
+
+.contact-cart .contact-cart-info h4{opacity: 0.8; padding-bottom: 4px;}
+.contact-cart .contact-cart-info p{opacity: 0.6; font-size: 14px;}
