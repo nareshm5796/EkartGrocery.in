@@ -19,7 +19,7 @@
 
 footer .footer-upper{display: flex;justify-content: space-between; margin: 15px 0px; padding: 15px 0px;}
 footer ul li{list-style: none;}
-footer p,a{font-size: 12px; color: rgba(0, 0, 0,0.8);font-weight: 400; margin: 10px 0px; text-decoration: none; transition: all 0.3s ease-in-out;}
+footer p,a{font-size: 13px; color: rgba(0, 0, 0,0.6); font-weight: 500; margin: 10px 0px; text-decoration: none; transition: all 0.3s ease-in-out;}
 footer img{width: 75%;}
 footer h5{font-weight: 500; padding: 10px 0px;}
 
@@ -40,5 +40,5 @@ footer .footer-lower .toolfree h2:hover{color: orange;}
 footer .footer-lower .followus{display: flex; justify-content: end; align-items: center; gap: 5px; height: 30px;}
 footer .footer-lower .followus .icon{ transition: all 0.3s ease-in-out; }
 footer .footer-lower .followus .icon:hover{transform: translateY(-5px);}  
-footer .footer-lower .followus .icon svg{font-size: 35px !important; color: rgba(59, 183, 126, 0.8) !important; background-color: #fff !important }
+footer .footer-lower .followus .icon svg{font-size: 30px !important; color: rgba(59, 183, 126, 0.8) !important; background-color: #fff !important }
                                       
