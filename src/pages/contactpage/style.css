@@ -32,12 +32,12 @@ footer li a:hover{ color: rgb(11, 214, 119); padding-left: 5px;}
 footer .colored-hr{background-color: rgba(59, 183, 126, 0.8);  height: 2px; border: 0;}
 
 
-footer .footer-lower{display: flex; justify-content: space-between; padding-top:10px ;}
+footer .footer-lower{display: flex; justify-content: space-between; align-items: center; padding-top:10px ;}
 footer .footer-lower .toolfree{display: flex; gap: 10px;}
 footer .footer-lower .toolfree svg{ font-size: 30px !important;}
 footer .footer-lower .toolfree h2{color: rgba(59, 183, 126, 0.8);}
 footer .footer-lower .toolfree h2:hover{color: orange;}
-footer .footer-lower .followus{display: flex; justify-content: end; align-items: center; gap: 5px;}
+footer .footer-lower .followus{display: flex; justify-content: end; align-items: center; gap: 5px; height: 30px;}
 footer .footer-lower .followus .icon{ transition: all 0.3s ease-in-out; }
 footer .footer-lower .followus .icon:hover{transform: translateY(-5px);}  
 footer .footer-lower .followus .icon svg{font-size: 35px !important; color: rgba(59, 183, 126, 0.8) !important; background-color: #fff !important }
